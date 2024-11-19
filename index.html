@@ -5,12 +5,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quizz JS</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    
+    <div class="container">
+      <p>Qui est sacré empereur de France le 2 décembre 1804?</p>
+      <input type="radio" id="clovis" name="empereur" value="clovis" />
+      <label for="clovis">Clovis</label><br />
+      <input type="radio" id="lincoln" name="empereur" value="lincoln" />
+      <label for="lincoln">Abraham Lincoln</label><br />
+      <input type="radio" id="napoleon" name="empereur" value="napoleon" />
+      <label for="napoleon">Napoléon Bonaparte</label><br />
+    </div>
+    <div class="container">
+      <p>
+        Quand la déclaration d'indépendance des États-Unis a-t-elle été signée?
+      </p>
+      <input
+        type="radio"
+        id="1776"
+        name="independance"
+        value="4 juillet 1776"
+      />
+      <label for="1776">4 juillet 1776</label><br />
+      <input type="radio" id="1856" name="independance" value="18 avril 1856" />
+      <label for="1856">18 avril 1856</label><br />
+      <input type="radio" id="1925" name="independance" value="30 juin 1925" />
+      <label for="1925">30 juin 1925</label><br />
+    </div>
+    <div class="container">
+      <p>Quand a eu lieu la chute de l'empire romain d'Occident?</p>
+      <input type="radio" id="date15" name="empire" value="15 ap J-C" />
+      <label for="date15">15 ap J-C</label><br />
+      <input type="radio" id="date476" name="empire" value="476 ap J-C" />
+      <label for="date476">476 ap J-C</label><br />
+      <input type="radio" id="date-740" name="empire" value="-740 av J-C" />
+      <label for="date-740">-740 av J-C</label><br />
+    </div>
+    <div class="container">
+      <p>Quelle est la capitale de la slovénie</p>
+      <input type="radio" id="Ljubljana" name="slovenie" value="Ljubljana" />
+      <label for="Ljubljana">Ljubljana</label><br />
+      <input type="radio" id="Belgrade" name="slovenie" value="Belgrade" />
+      <label for="Belgrade">Belgrade</label><br />
+      <input type="radio" id="Bratislava" name="slovenie" value="Bratislava" />
+      <label for="Bratislava">Bratislava</label><br />
+    </div>
+    <div class="container">
+      <p>Combien d'habitants compte l'Irlande en 2020?</p>
+      <input type="radio" id="one365M" name="irlande" value="1,365 Million" />
+      <label for="one365M">1,365 Million</label><br />
+      <input type="radio" id="twentyOneM" name="irlande" value="21 Millions" />
+      <label for="twentyOneM">21 Millions</label><br />
+      <input type="radio" id="four9M" name="irlande" value="4,9 Millions" />
+      <label for="four9M">4,9 Millions</label><br />
+    </div>
+    <button class="validation" onclick="validerReponses()">Valider ✅</button>
+    <p>
+      Cliquer pour <strong>valider</strong> pour voir les
+      <strong>résultats.</strong>
+    </p>
 
     <script src="app.js"></script>
   </body>

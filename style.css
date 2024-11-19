@@ -11,4 +11,26 @@ body {
   font-family: Open sans, sans-serif;
   background: linear-gradient(to right, #e0eafc, #cfdef3);
   padding: clamp(20px, 5vw, 50px) 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  background-color: white;
+  width: 50%;
+  height: 150px;
+  margin-bottom: 25px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43);
+}
+p {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+button {
+  padding: 15px;
+  background-color: white;
+  text-align: center;
+  border-style: none;
 }
