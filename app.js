@@ -1,51 +1,6 @@
 // // const responses = ["c", "a", "b", "a", "c"];
 // // const emojis = ["✔️", "✨", "👀", "😭", "👎"];
 
-// // Fonction pour valider les réponses et colorier les bonnes et mauvaises réponses
-// function validerReponses() {
-//   // Bonnes réponses
-//   const bonnesReponses = {
-//     empereur: "napoleon",
-//     independance: "4 juillet 1776",
-//     empire: "476 ap J-C",
-//     slovenie: "Ljubljana",
-//     irlande: "4,9 Millions",
-//   };
-
-//   // On parcourt chaque question
-//   for (let question in bonnesReponses) {
-//     // On récupère l'élément radio sélectionné pour cette question
-//     let selectedOption = document.querySelector(
-//       `input[name="${question}"]:checked`
-//     );
-
-//     // Si l'utilisateur n'a pas sélectionné de réponse pour cette question
-//     if (!selectedOption) {
-//       alert(`Vous n'avez pas répondu à la question : "${question}"`);
-//       return;
-//     }
-
-//     // On récupère la bonne réponse
-//     let bonneReponse = bonnesReponses[question];
-
-//     // On va maintenant comparer la réponse sélectionnée à la bonne réponse
-//     let labels = document.querySelectorAll(`input[name="${question}"] + label`);
-
-//     // Parcourir tous les labels pour cette question
-//     labels.forEach((label, index) => {
-//       // Si la valeur de la réponse est correcte
-//       if (
-//         selectedOption.value === bonneReponse &&
-//         selectedOption.value === label.innerText.trim()
-//       ) {
-//         label.style.color = "green"; // Bonne réponse en vert
-//       } else {
-//         label.style.color = "red"; // Mauvaise réponse en rouge
-//       }
-//     });
-//   }
-// }
-
 function validerReponses() {
   // Bonnes réponses pour chaque question
   const bonnesReponses = {
